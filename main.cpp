@@ -32,6 +32,9 @@ Escriba un programa controlador que pruebe la jerarquía de clases y
  comisiones aplicadas al saldo.
 */
 #include <iostream>
+#include "Cuenta.h"
+#include "CuentaAhorro.h"
+#include "CuentaCorriente.h"
 
 int main() {
 
