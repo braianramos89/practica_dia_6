@@ -10,7 +10,7 @@ class CuentaCorriente : public Cuenta{
 
 private:
     float importePorTransaccion;
-    int transaccion;
+
 
 public:
     CuentaCorriente(int nCuenta, float saldo, float);

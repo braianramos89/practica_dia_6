@@ -33,7 +33,7 @@ void Cuenta::setSaldo(float saldo){
 void Cuenta::deposito(float nDeposito) {
 
     this->saldo +=  nDeposito;
-    this->transaccion = this->transaccion + this->transaccion;
+    this->transaccion++;
 
 }
 

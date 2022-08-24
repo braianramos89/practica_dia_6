@@ -1,6 +1,3 @@
-//
-// Created by braian on 22/08/2022.
-//
 
 #include "CuentaCorriente.h"
 #include <iostream>
@@ -8,7 +5,7 @@
 CuentaCorriente::CuentaCorriente(int nCuenta, float saldo, float importePorTransaccion):Cuenta(nCuenta,saldo) {
     this->importePorTransaccion = importePorTransaccion;
 
-    this->transaccion = Cuenta::getTransaccion();
+
 }
 
 CuentaCorriente::CuentaCorriente() {};
@@ -36,7 +33,7 @@ void CuentaCorriente::comision() {
 
     float saldo = Cuenta::getSaldo();
 
-    float comision = this->transaccion * COMISION;
+    float comision = Cuenta::getTransaccion() * COMISION;
 
     saldo = saldo - comision;
 
